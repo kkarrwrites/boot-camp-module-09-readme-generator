@@ -68,6 +68,23 @@ function renderLicenseLink(license) {
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
+function renderLicenseSection(license) {
+  if (license === "None") {
+    return `N/A`;
+  } else {
+    return `Read more about the ${renderLicenseLink(license)}.`;
+  }
+}
+
+function renderQuestionsSection(github, email) {
+  if (!github && email) {
+    return `Email me at [${email}](mailto:${email}).`;
+  } else if (github && !email) {
+    return `Check out my [GitHub](https://github.com/${github}).`;
+  } else if (!github && !email) {
+    return `N/A`;
+  }
+}
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
