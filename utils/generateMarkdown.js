@@ -90,7 +90,44 @@ function renderQuestionsSection(github, email) {
 function generateMarkdown(data) {
   return `# ${data.title}
 
-`;
+${renderLicenseBadge(data.license)}
+
+## Description
+
+${data.description}
+  
+## Table of Contents
+
+- [Installation](#installation)  
+- [Usage](#usage) 
+- [License](#license)
+- [Contributing](#contributing)
+- [Tests](#tests)
+- [Questions](#questions)
+  
+## Installation
+
+${data.installation}
+  
+## Usage
+
+${data.usage}
+  
+## License
+
+${renderLicenseSection(data.license)}
+  
+## Contributing
+
+${data.contribution}
+  
+## Tests
+  
+${data.test}
+
+## Questions
+
+${renderQuestionsSection(data.github, data.email)}`;
 }
 
 module.exports = generateMarkdown;
