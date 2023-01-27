@@ -82,7 +82,7 @@ function writeToFile(data) {
     const fileName = generateFileName(answers);
 
     fs.appendFile(fileName, readmeContent, (error) =>
-      error ? console.error(error) : console.log("README.md created.")
+      error ? console.error(error) : console.log("README created.")
     );
   });
 }
