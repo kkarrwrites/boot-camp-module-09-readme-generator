@@ -29,6 +29,8 @@ function renderLicenseBadge(license) {
     return `![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)`;
   } else if (license === "The Unlicense") {
     return `![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)`;
+  } else {
+    return "";
   }
 }
 
@@ -63,6 +65,8 @@ function renderLicenseLink(license) {
     return `[Mozilla Public License 2.0](https://opensource.org/licenses/MPL-2.0)`;
   } else if (license === "The Unlicense") {
     return `[The Unlicense](http://unlicense.org/)`;
+  } else {
+    return "";
   }
 }
 
@@ -78,9 +82,11 @@ function renderLicenseSection(license) {
 
 function renderQuestionsSection(github, email) {
   if (!github && email) {
-    return `Email me at [${email}](mailto:${email}).`;
+    return `If you have any questions about the repo, open an issue or contact me directly at [${email}](mailto:${email}).`;
   } else if (github && !email) {
-    return `Check out my [GitHub](https://github.com/${github}).`;
+    return `If you have any questions about the repo, open an issue. You can find more of my work at my [GitHub](https://github.com/${github}).`;
+  } else if (github && email) {
+    return `If you have any questions about the repo, open an issue or contact me directly at [${email}](mailto:${email}). You can find more of my work at my [GitHub](https://github.com/${github}).`;
   } else if (!github && !email) {
     return `N/A`;
   }
