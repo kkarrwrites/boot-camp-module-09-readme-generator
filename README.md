@@ -8,6 +8,8 @@ A Node.js and npm coding challenge for UConn Boot Camp.
 
 ## Walkthrough
 
+[Google Drive Video Walkthrough](https://drive.google.com/file/d/1uEYEl3UqOUte5uYH_w0HBatrMzc6f12R/view)
+
 ## Technologies
 
 JavaScript, Node.js, npm, [Inquirer.js](https://www.npmjs.com/package/inquirer/v/8.2.4#methods), Markdown, Git, GitHub, VS Code, Chrome, Firefox
