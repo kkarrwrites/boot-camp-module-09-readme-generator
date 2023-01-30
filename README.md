@@ -6,6 +6,8 @@ A Node.js and npm coding challenge for UConn Boot Camp.
 
 ## Description
 
+This is a command line interface (CLI) application written in JavaScript and built using Node.js and npm, particularly the [Inquirer.js](https://www.npmjs.com/package/inquirer/v/8.2.4) package. This CLI application asks a user a series of questions through CLI prompts and then produces a README.md file. A sample README.md can be found in the app folder of this repo.
+
 ## Walkthrough
 
 [Video Walkthrough](https://drive.google.com/file/d/1uEYEl3UqOUte5uYH_w0HBatrMzc6f12R/view)
@@ -16,7 +18,7 @@ A Node.js and npm coding challenge for UConn Boot Camp.
 
 ## Technologies
 
-JavaScript, Node.js, npm, [Inquirer.js](https://www.npmjs.com/package/inquirer/v/8.2.4#methods), Markdown, Git, GitHub, VS Code, Chrome, Firefox
+JavaScript, Node.js, npm, [Inquirer.js](https://www.npmjs.com/package/inquirer/v/8.2.4), Markdown, Git, GitHub, VS Code, Chrome, Firefox
 
 ## License
 
