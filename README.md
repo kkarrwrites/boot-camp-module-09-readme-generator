@@ -2,7 +2,7 @@
 
 ## About
 
-A Node.js and npm coding challenge for UConn Boot Camp.
+A Node.js and npm coding challenge for Full Stack Coding Boot Camp.
 
 ## Description
 
